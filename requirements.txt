@@ -1,0 +1,15 @@
+# Dev environment
+pip
+autopep8
+
+# App
+flask
+
+# Libraries
+dash
+pandas
+plotly
+astropy
+db-sqlite3
+datetime
+scikit-learn

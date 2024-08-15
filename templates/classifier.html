@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            /* max-width: 1200px; */
+            height: 100vh;
+            margin: 0 auto;
+            width: 1600px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 0;
+            padding-top: 50px;
+        }
+        .classifier-flex {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            height: 700px;
+            margin-top: 55px;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .upload-section{
+            background-color: #222222;
+            border-radius: 10px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .sample-image-section {
+            background-color: #222222;
+            border-radius: 10px;
+            padding: 20px;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .form-section {
+            background-color: #222222;
+            border-radius: 10px;
+            padding: 20px;
+            height: 100%;
+            overflow-y: auto;
+            justify-content: space-between;
+        }
+
+        .upload-button, .form-button {
+            background-color: #9c27b0;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
+            transition: background-color 0.3s;
+        }
+        .upload-button:hover, .form-button:hover {
+            background-color: #7b1fa2;
+        }
+
+        .form-title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .form-field {
+            flex: 1 1 calc(50% - 10px);
+            margin-bottom: 10px;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        .form-field input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #444;
+            background-color: #333;
+            color: #fff;
+            border-radius: 3px;
+        }
+
+        .results-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .form-up {
+            background-color: #222222;
+            border-radius: 10px;
+            padding: 20px;
+            height: 580px;
+            overflow-y: auto;
+        }
+
+        .formup-button {
+            background-color: #9c27b0;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin-top: 100px;
+            margin-left: 180px;
+            transition: background-color 0.3s;
+        }
+
+        .img-section {
+            align-items: center;
+        }
+
+        img {
+            margin-top: 40px;
+            margin-left: 115px;
+        }
+
+        .section-title {
+            color: white;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classifier</h1>
+        <div class="classifier-flex">
+            <div class="left-column">
+                <div class="form-section">
+                    <h2 class="form-title">Fill in the obsereved values for each field and click submit to get the predicted class.</h2>
+                    <form class="form-grid" method="POST" action="/classifier/">
+                        <div class="form-field">
+                            <label for="field1">RA</label>
+                            <input type="text" id="field1" name="field1" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field2">DEC</label>
+                            <input type="text" id="field2" name="field2" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field3">U</label>
+                            <input type="text" id="field3" name="field3" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field4">G</label>
+                            <input type="text" id="field4" name="field4" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field5">R</label>
+                            <input type="text" id="field5" name="field5" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field6">I</label>
+                            <input type="text" id="field6" name="field6" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field7">Z</label>
+                            <input type="text" id="field7" name="field7" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field8">Redshift</label>
+                            <input type="text" id="field8" name="field8" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field9">Plate</label>
+                            <input type="text" id="field9" name="field9" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field10">MJD</label>
+                            <input type="text" id="field10" name="field10" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="field11">Fiber ID</label>
+                            <input type="text" id="field11" name="field11" required>
+                        </div>
+                    <button class="form-button" type="submit" value="manual">Submit</button>
+                    </form>
+                    <div class="results-section">
+                        {% if classification_result %}
+                            <h3>Predicted Class: {{ classification_result }}</h3>
+                        {% elif error %}
+                            <h3>Error: {{ error }}</h3>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">                
+                <div class="sample-image-section">
+                    <h2 class="section-title">Image Viewer</h2>
+                    <div class="img-section">
+                        {% if image_url %}
+                            <img src="{{ image_url }}" alt="SDSS Image">
+                        {% endif %}
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

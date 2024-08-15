@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="static/css/timeline.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/static/img/logo.png" alt="PCASO Logo">
+                <h1>PSCASO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#phase">Phases</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="#technique">Techniques</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="overview">
+            <!-- Carousel wrapper -->
+            <div class="carousel">
+                <img src="/static/img/bg2.jpg" alt="SDSS Image 1" class="active">
+                <img src="/static/img/bg3.jpg" alt="SDSS Image 2">
+                <img src="/static/img/bg4.jpg" alt="SDSS Image 3">
+            </div>
+            <!-- Carousel wrapper --> 
+            <div class="normal">
+                <div class="normal-text-box">
+                    <p class="normal-text">The Sloan Digital Sky Survey (SDSS) is a comprehensive project launched in 2000
+                        that employs a dedicated telescope at the Apache Point Observatory located in
+                        New Mexico, United States, to deliver an unparalleled mapping of the cosmos. With a cutting-edge
+                        120-megapixel camera and advanced spectrographs, the telescope amasses a huge amount of data,
+                        comprising multi-wavelength images and spectral details about stars, galaxies, and quasars</p>
+                </div>
+            </div>         
+        </div>
+        <div class="phase" id="phase">              
+            <section id="timeline">
+                <div class="tl-item">
+                  
+                    <div class="tl-bg" id="phase1-2"></div>
+                    
+                    <div class="tl-year">
+                        <p class="f2 heading--sanSerif">Phase 1 & 2</p>
+                    </div>
+                
+                    <div class="tl-content">
+                        <h1>SDSS I: Prior Surveys (2000-2008)</h1>
+                        <p>In its initial phase, SDSS undertook extensive imaging and spectroscopy to map the universe's large-scale structure.</p>
+                        <div class="survey">
+                            <div class="survey-img" id="p1s1">
+                                <img src="/static/img/legacy.png" width="390px" height="131px">
+                            </div>
+                            <div class="survey-content" id="s1">
+                                <h1>Legacy</h1>
+                                <p class="survey-text">
+                                    This foundational survey provided a detailed, uniform map of the universe, crucial for a wide range of astronomical studies, from asteroid tracking to cosmic structure analysis. 
+                                </p>
+                            </div>
+                            <div class="survey-img" id="p1s2">
+                                <img src="/static/img/supernova.png" width="390px" height="131px">
+                            </div>
+                            <div class="survey-content" id="s2">
+                                <h1>Supernova</h1>
+                                <p class="survey-text">
+                                    By repeatedly imaging a section of the sky, the Supernova Survey identified over 500 type Ia supernovae, which have been pivotal in understanding the expansion rate of the universe and the nature of dark energy.
+                                </p>
+                            </div>
+                            <div class="survey-img" id="p1s3">
+                                <img src="/static/img/SEGUE-1.png" width="390px" height="131px">
+                            </div>
+                            <div class="survey-content" id="s3">
+                                <h1>SEGUE-1</h1>
+                                <p class="survey-text">
+                                    Focused on the Milky Way, SEGUE-1 provided critical data on the structure and dynamics of our galaxy, offering insights into the formation and evolution of the Milky Way’s stellar populations.
+                                </p>
+                            </div>
+                        </div> 
+                    </div>              
+                </div>
+              
+                <div class="tl-item">
+                  
+                  <div class="tl-bg" id="phase3"></div>
+                  
+                  <div class="tl-year">
+                    <p class="f2 heading--sanSerif">Phase 3</p>
+                  </div>
+              
+                  <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">SDSS III: Prior Surveys (2008-2014)</h1>
+                    <p>SDSS-III introduced new instruments and expanded the scope of astronomical surveys with several groundbreaking projects.</p>
+                    <div class="survey">
+                        <div class="survey-img" id="p3s1">
+                            <img src="/static/img/APOGEE.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s1-s">
+                            <h1>APOGEE</h1>
+                            <p class="survey-text">
+                                The Apache Point Observatory Galactic Evolution Experiment used high-resolution infrared spectroscopy to map the Milky Way’s stellar populations, revealing detailed information about its structure and chemical composition.
+                            </p>
+                        </div>
+                        <div class="survey-img" id="p3s2">
+                            <img src="/static/img/BOSS.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s2-s">
+                            <h1>BOSS</h1>
+                            <p class="survey-text">
+                                The Baryon Oscillation Spectroscopic Survey created the most extensive 3D map of galaxies to date, allowing astronomers to measure cosmic expansion with unprecedented accuracy and providing insights into the universe's large-scale structure.
+                            </p>
+                        </div>
+                        <div class="survey-img" id="p3s3">
+                            <img src="/static/img/MARVELS.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s3-s">
+                            <h1>MARVELS</h1>
+                            <p class="survey-text">
+                                This survey focused on detecting exoplanets around nearby stars, contributing valuable data on the frequency and characteristics of planetary systems outside our solar system.
+                            </p>
+                        </div>
+                        <div class="survey-img" id="p3s4">
+                            <img src="/static/img/SEGUE-2.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s4-s">
+                            <h1>SEGUE-2</h1>
+                            <p class="survey-text">
+                                Building on SEGUE-1, SEGUE-2 continued to probe the Milky Way's kinematics and stellar populations, offering deeper insights into the dynamics and composition of our galaxy.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+              
+                </div>
+              
+                <div class="tl-item">
+                  
+                  <div class="tl-bg" id="phase4"></div>
+                  
+                  <div class="tl-year">
+                    <p class="f2 heading--sanSerif">Phase 4</p>
+                  </div>
+              
+                  <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">SDSS-IV: Surveys (2014-2020)</h1>
+                    <p>SDSS-IV marked a significant advancement in observational astronomy, extending the reach of SDSS with new and enhanced surveys.</p>
+                    <div class="survey">
+                        <div class="survey-img" id="p4s1">
+                            <img src="/static/img/APOGEE-2.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s1">
+                            <h1>APOGEE-2</h1>
+                            <p class="survey-text">
+                                Expanded the Milky Way survey to both the northern and southern hemispheres, providing a comprehensive view of our galaxy’s structure and evolution. This survey has offered crucial insights into the galaxy’s formation and chemical enrichment.
+                            </p>
+                        </div>
+                        <div class="survey-img" id="p4s2">
+                            <img src="/static/img/eBOSS.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s2">
+                            <h1>eBOSS</h1>
+                            <p class="survey-text">
+                                Extended BOSS's work by focusing on quasars and galaxies to refine our understanding of cosmic expansion and large-scale structure. Subprograms like TDSS and SPIDERS contributed to studying variable objects and supermassive black holes, respectively
+                            </p>
+                        </div>
+                        <div class="survey-img" id="p4s3">
+                            <img src="/static/img/MaNGA.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s3">
+                            <h1>MaNGA</h1>
+                            <p class="survey-text">
+                                Mapped the detailed internal structure of nearly 10,000 nearby galaxies through spatially resolved spectroscopy, revealing intricate details about galaxy formation and evolution. The MaNGA stellar library (MaStar) added depth by cataloging thousands of stars with diverse parameters.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+              
+                </div>
+              
+                <div class="tl-item">
+                  
+                  <div class="tl-bg" id="phase5"></div>
+                  
+                  <div class="tl-year">
+                    <p class="f2 heading--sanSerif">Phase 5</p>
+                  </div>
+              
+                  <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">SDSS-V: Current Surveys (2020-Present)</h1>
+                    <p>Launched in October 2020, SDSS-V represents the latest in advanced astronomical surveys, featuring innovative programs to explore both local and distant cosmic phenomena.</p>
+                    <div class="survey">
+                        <div class="survey-img" id="p5s1">
+                            <img src="/static/img/Current Surveys.png" width="390px" height="131px">
+                        </div>
+                        <div class="survey-content" id="s1-ss">
+                            <h1>Milky Way Mapper</h1>
+                            <p class="survey-text">
+                                This survey is set to capture spectra from over 4 million stars throughout the Milky Way and Local Group, aiming to provide detailed insights into the structure, formation, and evolution of our galaxy.
+                            </p>
+                        </div>
+                        <div class="survey-content" id="s2-ss">
+                            <h1>Local Volume Mapper</h1>
+                            <p class="survey-text">
+                                Focuses on optical, integral-field spectroscopy to study the Milky Way, the Magellanic Clouds, and other nearby galaxies. This survey will enhance our understanding of the dynamics and characteristics of these local cosmic structures.
+                            </p>
+                        </div>
+                        <div class="survey-content" id="s3-ss">
+                            <h1>Black Hole Mapper</h1>
+                            <p class="survey-text">
+                                Aims to obtain detailed optical spectra of over 300,000 quasars, offering new insights into the nature and evolution of supermassive black holes and their impact on galaxy formation.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+              
+                </div>
+              </section>              
+        </div>
+        <div class="data" id="data">
+            <div class="dcontainer">
+                <header class="dtitle">
+                    <h1>Types of SDSS Data</h1>
+                    <p class="tintro">The SDSS uses two primary types of measurements—photometric and spectroscopic—to capture and analyze celestial objects,<br>each serving a unique purpose but complementing each other to provide a comprehensive view of the universe.</p>
+                </header>
+                <div class="dcontent">
+                    <div class="pcolumn">
+                        <h2 class="column-title">Photometric Data</h2>
+                        <div class="cardcon">
+                            <p>&emsp;&emsp;&emsp; Photometric measurements play a crucial role in astronomy by capturing images of celestial objects across multiple wavelength bands, allowing for a comprehensive analysis of their properties. By measuring the light intensity at different wavelengths, photometry provides valuable information about the apparent brightness, color, and other characteristics of these objects. This method is particularly useful for large-scale surveys of the sky, as it enables astronomers to gather extensive data on vast numbers of celestial bodies.</p>
+                            <p>&emsp;&emsp;&emsp; One of the most significant applications of photometry is in cataloging the positions and apparent magnitudes of millions of galaxies, quasars, and other astronomical objects. This system allows astronomers to observe and analyze a broad array of objects, contributing to our understanding of the cosmos in unprecedented ways.</p>
+                            <p>&emsp;&emsp;&emsp; Each filter in this system is denoted by a letter: ’u’ (ultraviolet), ’g’ 56 (green), ’r’ (red), ’i’ (near-infrared), and ’z’ (further into the near-infrared). These filters span a wavelength range from approximately 3000 to 10,000 Angstroms, providing detailed photometric measurements.</p>
+                        </div>
+                        <div class="cards">
+                            <div class="card" id="c1">
+                                <div class="card-img">
+                                    <img src="/static/img/table.png" width="300px">
+                                </div>
+                                <div class="card-txt">
+                                    <p class="dtext">A table showing different bands and the wavelengths were they fall in with their respective spectrum.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="c2">
+                                <div class="card-img">
+                                    <img src="/static/img/newcam.png" width="250px">
+                                </div>
+                                <div class="card-txt">
+                                    <p class="dtext"> Photograph of the camera of the SDSS telescope showing the ugriz filters. Image credit: SDSS</p>
+                                </div>
+                            </div>
+                            <div class="card" id="c3">
+                                <div class="card-img">
+                                    <img src="/static/img/graphimg.png" width="200px" height="200px">
+                                </div>
+                                <div class="card-txt">
+                                    <p class="dtext">Repersentatoin of the<br> u, g, r, i, and z filters wavelengths. Image credit: SDSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scolumn">
+                        <h2 class="column-title">Spectrometric Data</h2>
+                        <div class="cardcon">
+                            <p>&emsp;&emsp;&emsp; Spectroscopic measurements are essential tools in astronomy, capturing the detailed spectrum of light emitted by celestial objects. This technique reveals a wealth of information about the chemical composition and physical properties of these objects. By dispersing light into its constituent wavelengths, spectroscopy allows astronomers to identify the specific elements present in a star or galaxy and determine various physical characteristics, such as temperature and velocity.</p>
+                            <p>&emsp;&emsp;&emsp; One of the key advantages of spectroscopy is its ability to measure the velocity of celestial objects through the Doppler shift, where the wavelength of light is stretched or compressed depending on the object's motion relative to the observer.</p>
+                            <p>&emsp;&emsp;&emsp; This information is crucial for understanding the dynamics of stars, galaxies, and other astronomical phenomena. Spectroscopy also provides insights into the temperature of these objects by analyzing the intensity and distribution of spectral lines.</p>
+                            <p>&emsp;&emsp;&emsp; Moreover, spectroscopy plays a pivotal role in studying the expansion of the universe through redshift measurements. As galaxies move away from us, their light shifts to longer, redder wavelengths, providing direct evidence of the universe's expansion. </p>
+                        </div>
+                        <div class="cards">
+                            <div class="card" id="c1">
+                                <div class="card-img">
+                                    <img src="/static/img/spectrograph.jpg" width="900px">
+                                </div>
+                                <div class="card-txt">
+                                    <p class="dtext">A table showing different bands and the wavelengths were they fall in with their respective spectrum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="application" id="application">
+            <div class="acontainer">
+                <header class="ahead">
+                    <h1 class="atitle">SDSS Applications</h1>
+                    <p class="subtitle">Exploring the cosmos through data</p>
+                </header>
+                <main>
+                    <div class="application">
+                        <h2 class="apptitle">Mapping the Universe</h2>
+                        <p>SDSS creates epic 3D maps of galaxies and quasars, helping us visualize the universe's large-scale structure. Think cosmic voids and galactic filaments – it's like Google Maps, but for space!</p>
+                    </div>
+                    
+                    <div class="application">
+                        <h2 class="apptitle">Cosmic Evolution</h2>
+                        <p>By comparing data across time, SDSS tracks how galaxies and quasars evolve. It's like watching the universe grow up, from its wild youth to its more mature current state.</p>
+                    </div>
+                    
+                    <div class="application">
+                        <h2 class="apptitle">Stellar & Galactic Studies</h2>
+                        <p>SDSS data gives us the scoop on stars and nearby galaxies. It's helping us understand our cosmic neighborhood, from the Milky Way's structure to the drama of galactic interactions.</p>
+                    </div>
+                    
+                    <div class="application">
+                        <h2 class="apptitle">Dark Energy & Cosmic Expansion</h2>
+                        <p>SDSS is helping crack the mystery of dark energy and the universe's accelerating expansion. It's mind-bending stuff that's reshaping our understanding of... well, everything.</p>
+                    </div>
+                    
+                    <div class="application">
+                        <h2 class="apptitle">Exoplanet Discovery</h2>
+                        <p>SDSS data is uncovering new worlds beyond our solar system. It's like planet hunting, but with really, really powerful telescopes.</p>
+                    </div>
+                    
+                    <div class="application">
+                        <h2 class="apptitle">Public Engagement</h2>
+                        <p>SDSS isn't just for pros – it's democratizing astronomy. With online tools and databases, anyone can explore the universe. Citizen scientists, unite!</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+        <div class="technique" id="technique">
+            <div class="tcontainer">
+                <header class="ttitle">
+                    <h1 class="thead">Traditional Techniques</h1>
+                    <p class="tintro">The SDSS uses two primary types of measurements—photometric and spectroscopic—to capture and analyze celestial objects,<br>each serving a unique purpose but complementing each other to provide a comprehensive view of the universe.</p>
+                </header>
+                <div class="tcontent">
+                    <div class="tcolumn">
+                        <div class="cards">
+                            <div class="card" id="c1">
+                                <h1>The Old Ways of Astronomy</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; In the early days of astronomy, classification and analysis of celestial objects were incredibly laborintensive. Astronomers relied on painstaking manual methods to categorize and study the vast array of stars, galaxies, and other cosmic entities. This process involved hours of meticulous observation and record-keeping, often using paper catalogs and hand-drawn charts.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="c1">
+                                <h1>Examples of traditional methods</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; The traditional approaches to astronomy, while groundbreaking in their time, came with several
+                                        significant challenges. Firstly, these methods were exceedingly time-consuming. Each object had to
+                                        be manually observed and classified, leading to slow progress and limited data processing
+                                        capabilities.</p>
+                                    <p>&emsp;&emsp;&emsp;Scalability was another major issue. As astronomical surveys began to capture more data, the task of
+                                    processing and classifying this information by hand became increasingly impractical. The sheer
+                                    volume of data created a bottleneck, limiting the scope of research and discoveries.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="c1">
+                                <h1>Why We Needed a Change</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; These limitations highlighted the need for a more efficient, accurate, and scalable approach. As the
+                                        volume and complexity of astronomical data continued to grow, it became clear that new methods
+                                        were necessary to fully exploit the potential of these rich datasets. The field of astronomy was ready
+                                        for a transformation that would overcome the constraints of traditional techniques and unlock new
+                                        possibilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mcontainer">
+                <header class="ttitle">
+                    <h1 class="thead">Modern Techniques</h1>
+                    <p class="tintro">The SDSS uses two primary types of measurements—photometric and spectroscopic—to capture and analyze celestial objects,<br>each serving a unique purpose but complementing each other to provide a comprehensive view of the universe.</p>
+                </header>
+                <div class="tcontent">
+                    <div class="tcolumn">
+                        <div class="cards">
+                            <div class="card" id="c1">
+                                <h1>Power of Machine Learning</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; The landscape of astronomy has been dramatically transformed with the advent of machine learning
+                                        (ML). This cutting-edge technology offers a powerful tool for analyzing vast amounts of data with
+                                        unprecedented speed and accuracy.</p>
+                                    <p>&emsp;&emsp;&emsp; Machine learning algorithms like XGBoost and Random Forest have revolutionized data analysis in
+                                        astronomy. XGBoost excels in handling complex datasets, making it ideal for uncovering intricate
+                                        patterns and relationships. Random Forest, on the other hand, provides robustness and versatility,
+                                        enabling effective classification and regression tasks across varied datasets.</p>                                    
+                                </div>
+                            </div>
+                            <div class="card" id="c1">
+                                <h1>Advantages That Transform Astronomy</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; Machine learning introduces several advantages that address the shortcomings of traditional
+                                        methods. The automation and efficiency brought by ML enable the processing of vast datasets 
+                                        quickly and accurately. This leap forward not only accelerates research but also enhances the
+                                        precision of data analysis.</p>
+                                    <p>&emsp;&emsp;&emsp;Accuracy is another significant benefit. ML algorithms deliver higher predictive performance and
+                                        reliability, reducing the likelihood of errors that were common in manual classification. Additionally,
+                                        the scalability of ML allows astronomers to handle the enormous volumes of data produced by
+                                        modern surveys like SDSS without breaking a sweat.</p>
+                                </div>
+                            </div>
+                            <div class="card" id="c1">
+                                <h1>The Future is Now</h1>
+                                <div class="card-txt">
+                                    <p>&emsp;&emsp;&emsp; Integrating machine learning into astronomical research opens up exciting new possibilities. This
+                                        technology is pushing the boundaries of what’s possible, allowing scientists to explore and
+                                        understand the cosmos in ways that were once unimaginable. Join the revolution in astronomy and
+                                        embrace the power of machine learning to take your research to new heights. The future is here, and
+                                        it’s brimming with potential.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
