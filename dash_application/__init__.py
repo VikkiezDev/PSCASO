@@ -188,7 +188,7 @@ def create_dash_app(flask_app):
 
 # Function to load data from a SQLite table
 def load_data(table_name):
-    conn = sqlite3.connect('/home/user/pcaso/data/data_release.db')
+    conn = sqlite3.connect('data/data_release.db')
     query = f"SELECT * FROM {table_name}"
     df = pd.read_sql(query, conn)
     conn.close()
