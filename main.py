@@ -1,14 +1,8 @@
 import os
-import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
-import requests
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request
 from dash_application import create_dash_app
 import pickle
 import pandas as pd
-import xgboost as xgb # Ensure XGBoost is imported if it's used in classify_new_data
-import matplotlib
 
 # Load the PCA and scaler objects from the pickle file
 with open('/home/user/pcaso/model/pca_scaler.pkl', 'rb') as file:
