@@ -1,7 +1,3 @@
-# Dev environment
-pip
-autopep8
-
 # App
 flask
 
@@ -13,3 +9,5 @@ astropy
 db-sqlite3
 datetime
 scikit-learn
+xgboost
+matplotlib
