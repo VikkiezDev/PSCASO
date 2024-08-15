@@ -31,10 +31,10 @@ def create_dash_app(flask_app):
                         {'label': 'DR15', 'value': 'dr15'}
                     ],
                     value='dr18',
-                    style={'width': '40%', 'margin': '0 auto', 'color': 'white'}
+                    style={'width': '40%', 'margin': '0 auto', 'color': 'black'}
                 ),
                 html.Div(id='dataset-shape', style={'margin-top': '20px', 'text-align': 'center'})
-            ], style={'width': '100%', 'text-align': 'center', 'margin-bottom': '20px'}),
+            ], style={'text-align': 'center', 'margin-bottom': '20px'}),
             
             html.Div([
                 dcc.Graph(id='sky-map')
