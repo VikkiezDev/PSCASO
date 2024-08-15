@@ -5,16 +5,16 @@ import pickle
 import pandas as pd
 
 # Load the PCA and scaler objects from the pickle file
-with open('/home/user/pcaso/model/pca_scaler.pkl', 'rb') as file:
+with open('model/pca_scaler.pkl', 'rb') as file:
     pca_scaler = pickle.load(file)
     pca = pca_scaler['pca']
     scaler = pca_scaler['scaler']
     le = pca_scaler['le']
 
-with open('/home/user/pcaso/model/final-model.pkl', 'rb') as file:
+with open('model/final-model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-data = pd.read_csv('/home/user/pcaso/data/DR18.csv')
+data = pd.read_csv('data/DR18.csv')
 
 app = Flask(__name__)
 
