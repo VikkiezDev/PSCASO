@@ -1,13 +1,11 @@
-# [Project Name]
+# PSCASO
 
-[A brief and engaging description of your project. What does it do? What problem does it solve? Who is it for?]
-
+PSCASO is a user-friendly tool designed to assist beginner and new researchers in the classification and analysis of stellar data. It provides a straightforward interface for working with astronomical datasets, allowing users to classify stars, galaxies, and quasars, while also offering various visualizations to explore photometric data. The app simplifies complex tasks, making it accessible for those just entering the field of astronomy and data science.
 ## Table of Contents
 
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Flow Diagram](#flow-diagram)
 
 ## Installation
 
@@ -49,16 +47,50 @@
     ```
 
 ## Project Structure
-    
+    .
+└── PSCASO/
+    ├── assets/
+    │   └── styles.css
+    ├── dash_application/
+    │   └── __init__.py
+    ├── data/
+    │   ├── data_release.db
+    │   └── DR18.csv
+    ├── model/
+    │   ├── final-model.pkl
+    │   └── pca_scaler.pkl
+    ├── static/
+    │   ├── css/
+    │   │   ├── styles.css
+    │   │   ├── timeline.css
+    │   │   └── viewer.css
+    │   ├── js/
+    │   │   └── script.js
+    │   ├── img/
+    │   │   ├── bg.jpg
+    │   │   ├── .
+    │   │   ├── .
+    │   │   └── research.png
+    │   └── docs/
+    │       ├── Project_Documentation.pdf
+    │       └── Research_paper.pdf
+    ├── templates/
+    │   ├── index.html
+    │   ├── background.html
+    │   ├── classifier.html
+    │   ├── research.html
+    │   └── documentation.html
+    ├── main.py
+    ├── .gitignore
+    ├── README.md
+    └── requirements.txt
 
 ## Usage
 
 1. **Run the application:**
-
+    ```bash
+    python main.py
+    ```
 2. **Access the application:**
 
    Open your web browser and go to `http://localhost:8080` (or the port you configured).
-
-## Flow Diagram
-
-[Include a simple flow diagram or steps explaining how the different components of your project interact. You can use tools like Mermaid, PlantUML, or draw.io for this.]
