@@ -47,7 +47,7 @@ PSCASO is a user-friendly tool designed to assist beginner and new researchers i
     ```
 
 ## Project Structure
-    .
+```
 └── PSCASO/
     ├── assets/
     │   └── styles.css
@@ -84,7 +84,7 @@ PSCASO is a user-friendly tool designed to assist beginner and new researchers i
     ├── .gitignore
     ├── README.md
     └── requirements.txt
-
+```
 ## Usage
 
 1. **Run the application:**
