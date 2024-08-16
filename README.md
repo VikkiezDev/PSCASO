@@ -81,7 +81,6 @@ PSCASO is a user-friendly tool designed to assist beginner and new researchers i
     │   ├── research.html
     │   └── documentation.html
     ├── main.py
-    ├── .gitignore
     ├── README.md
     └── requirements.txt
 ```
